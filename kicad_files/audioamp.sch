@@ -1,4 +1,347 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Amplificador de Áudio"
+Date "2020-06-30"
+Rev "1"
+Comp "UFS"
+Comment1 "Design por Raphael Cardoso"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Audio:TDA2030 U?
+U 1 1 5EFBC8F8
+P 4250 2450
+F 0 "U?" H 4350 2550 50  0000 L CNN
+F 1 "TDA2030" H 4250 2300 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-5_P3.4x3.7mm_StaggerOdd_Lead3.8mm_Vertical" H 4250 2450 50  0001 C CIN
+F 3 "http://www.st.com/resource/en/datasheet/cd00000128.pdf" H 4250 2450 50  0001 C CNN
+	1    4250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Audio:TDA2030 U?
+U 1 1 5EFBCEAE
+P 5900 2450
+F 0 "U?" H 6050 2550 50  0000 C CNN
+F 1 "TDA2030" H 6050 2300 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-5_P3.4x3.7mm_StaggerOdd_Lead3.8mm_Vertical" H 5900 2450 50  0001 C CIN
+F 3 "http://www.st.com/resource/en/datasheet/cd00000128.pdf" H 5900 2450 50  0001 C CNN
+	1    5900 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS?
+U 1 1 5EFBD525
+P 4950 1800
+F 0 "LS?" V 4959 1520 50  0000 R CNN
+F 1 "Speaker" V 4868 1520 50  0000 R CNN
+F 2 "" H 4950 1600 50  0001 C CNN
+F 3 "~" H 4940 1750 50  0001 C CNN
+	1    4950 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5EFBE46E
+P 3750 4550
+F 0 "C?" H 3868 4596 50  0000 L CNN
+F 1 "CP" H 3868 4505 50  0000 L CNN
+F 2 "" H 3788 4400 50  0001 C CNN
+F 3 "~" H 3750 4550 50  0001 C CNN
+	1    3750 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5EFBE772
+P 3100 2350
+F 0 "C?" V 3355 2350 50  0000 C CNN
+F 1 "CP" V 3264 2350 50  0000 C CNN
+F 2 "" H 3138 2200 50  0001 C CNN
+F 3 "~" H 3100 2350 50  0001 C CNN
+	1    3100 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5EFBF30C
+P 3750 3400
+F 0 "C?" H 3868 3446 50  0000 L CNN
+F 1 "CP" H 3868 3355 50  0000 L CNN
+F 2 "" H 3788 3250 50  0001 C CNN
+F 3 "~" H 3750 3400 50  0001 C CNN
+	1    3750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5EFBFC83
+P 6450 3400
+F 0 "C?" H 6568 3446 50  0000 L CNN
+F 1 "CP" H 6568 3355 50  0000 L CNN
+F 2 "" H 6488 3250 50  0001 C CNN
+F 3 "~" H 6450 3400 50  0001 C CNN
+	1    6450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5EFC00B8
+P 5200 1100
+F 0 "C?" H 5318 1146 50  0000 L CNN
+F 1 "CP" H 5318 1055 50  0000 L CNN
+F 2 "" H 5238 950 50  0001 C CNN
+F 3 "~" H 5200 1100 50  0001 C CNN
+	1    5200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EFC068C
+P 4800 3900
+F 0 "C?" H 4915 3946 50  0000 L CNN
+F 1 "C" H 4915 3855 50  0000 L CNN
+F 2 "" H 4838 3750 50  0001 C CNN
+F 3 "~" H 4800 3900 50  0001 C CNN
+	1    4800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EFC0A87
+P 4750 1100
+F 0 "C?" H 4865 1146 50  0000 L CNN
+F 1 "C" H 4865 1055 50  0000 L CNN
+F 2 "" H 4788 950 50  0001 C CNN
+F 3 "~" H 4750 1100 50  0001 C CNN
+	1    4750 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EFC0EC5
+P 5200 3450
+F 0 "C?" H 5315 3496 50  0000 L CNN
+F 1 "C" H 5315 3405 50  0000 L CNN
+F 2 "" H 5238 3300 50  0001 C CNN
+F 3 "~" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EFC1365
+P 5900 4300
+F 0 "C?" H 6015 4346 50  0000 L CNN
+F 1 "C" H 6015 4255 50  0000 L CNN
+F 2 "" H 5938 4150 50  0001 C CNN
+F 3 "~" H 5900 4300 50  0001 C CNN
+	1    5900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC2137
+P 3550 2650
+F 0 "R?" H 3620 2696 50  0000 L CNN
+F 1 "R" H 3620 2605 50  0000 L CNN
+F 2 "" V 3480 2650 50  0001 C CNN
+F 3 "~" H 3550 2650 50  0001 C CNN
+	1    3550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC2480
+P 4400 3050
+F 0 "R?" V 4193 3050 50  0000 C CNN
+F 1 "R" V 4284 3050 50  0000 C CNN
+F 2 "" V 4330 3050 50  0001 C CNN
+F 3 "~" H 4400 3050 50  0001 C CNN
+	1    4400 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC262F
+P 3750 3900
+F 0 "R?" H 3820 3946 50  0000 L CNN
+F 1 "R" H 3820 3855 50  0000 L CNN
+F 2 "" V 3680 3900 50  0001 C CNN
+F 3 "~" H 3750 3900 50  0001 C CNN
+	1    3750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC29EB
+P 6800 2650
+F 0 "R?" H 6870 2696 50  0000 L CNN
+F 1 "R" H 6870 2605 50  0000 L CNN
+F 2 "" V 6730 2650 50  0001 C CNN
+F 3 "~" H 6800 2650 50  0001 C CNN
+	1    6800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC2C42
+P 6450 4000
+F 0 "R?" H 6520 4046 50  0000 L CNN
+F 1 "R" H 6520 3955 50  0000 L CNN
+F 2 "" V 6380 4000 50  0001 C CNN
+F 3 "~" H 6450 4000 50  0001 C CNN
+	1    6450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC3091
+P 5700 3650
+F 0 "R?" V 5493 3650 50  0000 C CNN
+F 1 "R" V 5584 3650 50  0000 C CNN
+F 2 "" V 5630 3650 50  0001 C CNN
+F 3 "~" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC3390
+P 5200 3900
+F 0 "R?" H 5270 3946 50  0000 L CNN
+F 1 "R" H 5270 3855 50  0000 L CNN
+F 2 "" V 5130 3900 50  0001 C CNN
+F 3 "~" H 5200 3900 50  0001 C CNN
+	1    5200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC3809
+P 5700 3050
+F 0 "R?" V 5907 3050 50  0000 C CNN
+F 1 "R" V 5816 3050 50  0000 C CNN
+F 2 "" V 5630 3050 50  0001 C CNN
+F 3 "~" H 5700 3050 50  0001 C CNN
+	1    5700 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC3CF5
+P 4800 4550
+F 0 "R?" H 4870 4596 50  0000 L CNN
+F 1 "R" H 4870 4505 50  0000 L CNN
+F 2 "" V 4730 4550 50  0001 C CNN
+F 3 "~" H 4800 4550 50  0001 C CNN
+	1    4800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4001 D?
+U 1 1 5EFC4386
+P 4400 1900
+F 0 "D?" H 4400 2117 50  0000 C CNN
+F 1 "1N4001" H 4400 2026 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4400 1725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4400 1900 50  0001 C CNN
+	1    4400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4001 D?
+U 1 1 5EFC4E2C
+P 5800 1900
+F 0 "D?" H 5800 1683 50  0000 C CNN
+F 1 "1N4001" H 5800 1774 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5800 1725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5800 1900 50  0001 C CNN
+	1    5800 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4001 D?
+U 1 1 5EFC5A4E
+P 4400 3350
+F 0 "D?" H 4400 3133 50  0000 C CNN
+F 1 "1N4001" H 4400 3224 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4400 3175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4400 3350 50  0001 C CNN
+	1    4400 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4001 D?
+U 1 1 5EFC651D
+P 5700 3350
+F 0 "D?" H 5700 3567 50  0000 C CNN
+F 1 "1N4001" H 5700 3476 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5700 3175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5EFC83A7
+P 2400 1050
+F 0 "#PWR0101" H 2400 800 50  0001 C CNN
+F 1 "GND" H 2405 877 50  0000 C CNN
+F 2 "" H 2400 1050 50  0001 C CNN
+F 3 "" H 2400 1050 50  0001 C CNN
+	1    2400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR0102
+U 1 1 5EFC90D6
+P 2200 850
+F 0 "#PWR0102" H 2200 750 50  0001 C CNN
+F 1 "+VDC" H 2200 1125 50  0000 C CNN
+F 2 "" H 2200 850 50  0001 C CNN
+F 3 "" H 2200 850 50  0001 C CNN
+	1    2200 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-VDC #PWR0103
+U 1 1 5EFC9579
+P 2200 1150
+F 0 "#PWR0103" H 2200 1050 50  0001 C CNN
+F 1 "-VDC" H 2200 1425 50  0000 C CNN
+F 2 "" H 2200 1150 50  0001 C CNN
+F 3 "" H 2200 1150 50  0001 C CNN
+	1    2200 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 5EFC7935
+P 1600 1000
+F 0 "J?" H 1492 1285 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 1492 1194 50  0000 C CNN
+F 2 "" H 1600 1000 50  0001 C CNN
+F 3 "~" H 1600 1000 50  0001 C CNN
+	1    1600 1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 850  2200 900 
+Wire Wire Line
+	2200 900  1800 900 
+Wire Wire Line
+	1800 1100 2200 1100
+Wire Wire Line
+	2200 1100 2200 1150
+Wire Wire Line
+	2400 1050 2400 1000
+Wire Wire Line
+	2400 1000 1800 1000
 $EndSCHEMATC
