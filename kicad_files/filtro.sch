@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "Amplificador de Áudio"
-Date "2020-06-30"
-Rev "2"
+Date "2020-07-01"
+Rev "3"
 Comp "UFS"
 Comment1 "Design por Raphael Cardoso"
 Comment2 "Amin = 40dB, Amax = 2dB"
@@ -57,27 +57,23 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 1500 7150 50  0001 C CNN
 	5    1450 6950
 	0    -1   1    0   
 $EndComp
-Text HLabel 1150 6850 0    50   Input ~ 0
+Text HLabel 1000 6850 0    50   Input ~ 0
 +VDC
-Text HLabel 1750 6850 2    50   Input ~ 0
--VDC
-Text HLabel 1250 7100 0    50   Input ~ 0
+Text HLabel 1450 7100 1    50   Input ~ 0
 GND
 $Comp
 L power:GND #PWR01
 U 1 1 5F0E079D
-P 1450 7150
-F 0 "#PWR01" H 1450 6900 50  0001 C CNN
-F 1 "GND" H 1455 6977 50  0000 C CNN
-F 2 "" H 1450 7150 50  0001 C CNN
-F 3 "" H 1450 7150 50  0001 C CNN
-	1    1450 7150
+P 1450 7350
+F 0 "#PWR01" H 1450 7100 50  0001 C CNN
+F 1 "GND" H 1455 7177 50  0000 C CNN
+F 2 "" H 1450 7350 50  0001 C CNN
+F 3 "" H 1450 7350 50  0001 C CNN
+	1    1450 7350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 7100 1450 7100
-Wire Wire Line
-	1450 7100 1450 7150
+	1450 7100 1450 7300
 $Comp
 L power:GND #PWR02
 U 1 1 5F0E10AB
@@ -406,13 +402,96 @@ Primeiro estágio - Filtro de segunda ordem
 Text Notes 5600 2900 0    50   ~ 0
 Segundo estágio - Filtro de primeira ordem
 Wire Notes Line
-	750  6350 750  7550
-Wire Notes Line
-	750  7550 2250 7550
+	700  6350 700  7550
 Wire Notes Line
 	2250 7550 2250 6350
-Wire Notes Line
-	2250 6350 750  6350
 Text Notes 750  6300 0    50   ~ 0
-Alimentação
+Alimentação do TL084
+$Comp
+L Device:C C16
+U 1 1 5EFD5E63
+P 1950 7150
+F 0 "C16" H 2065 7196 50  0000 L CNN
+F 1 "100nF" H 2000 7050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 1988 7000 50  0001 C CNN
+F 3 "~" H 1950 7150 50  0001 C CNN
+	1    1950 7150
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 6850 2    50   Input ~ 0
+-VDC
+Wire Wire Line
+	1850 6850 1750 6850
+Wire Wire Line
+	1950 6850 1850 6850
+Connection ~ 1850 6850
+Wire Notes Line
+	700  6350 2250 6350
+Wire Notes Line
+	700  7550 2250 7550
+$Comp
+L Device:CP C15
+U 1 1 5EFE7556
+P 1700 7150
+F 0 "C15" H 1550 7300 50  0000 L CNN
+F 1 "100uF" H 1450 7050 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1738 7000 50  0001 C CNN
+F 3 "~" H 1700 7150 50  0001 C CNN
+	1    1700 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 7000 1700 7000
+Wire Wire Line
+	1850 6850 1850 7000
+Wire Wire Line
+	1850 7000 1950 7000
+Connection ~ 1850 7000
+Wire Wire Line
+	1950 7300 1700 7300
+Wire Wire Line
+	1700 7300 1450 7300
+Connection ~ 1700 7300
+Connection ~ 1450 7300
+Wire Wire Line
+	1450 7300 1450 7350
+$Comp
+L Device:CP C14
+U 1 1 5EFEF689
+P 1200 7150
+F 0 "C14" H 1050 7300 50  0000 L CNN
+F 1 "100uF" H 950 7050 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1238 7000 50  0001 C CNN
+F 3 "~" H 1200 7150 50  0001 C CNN
+	1    1200 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5EFF003F
+P 950 7150
+F 0 "C13" H 700 7050 50  0000 L CNN
+F 1 "100nF" H 700 7250 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 988 7000 50  0001 C CNN
+F 3 "~" H 950 7150 50  0001 C CNN
+	1    950  7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  7300 1200 7300
+Wire Wire Line
+	1200 7300 1450 7300
+Connection ~ 1200 7300
+Wire Wire Line
+	1000 6850 1050 6850
+Wire Wire Line
+	950  7000 1050 7000
+Wire Wire Line
+	1050 6850 1050 7000
+Connection ~ 1050 6850
+Wire Wire Line
+	1050 6850 1150 6850
+Connection ~ 1050 7000
+Wire Wire Line
+	1050 7000 1200 7000
 $EndSCHEMATC
