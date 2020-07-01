@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Amplificador de Áudio"
 Date "2020-06-30"
 Rev "1"
@@ -727,4 +727,15 @@ Text Label 10000 2250 0    50   ~ 0
 T1-
 Text Label 10000 2450 0    50   ~ 0
 T2-
+$Sheet
+S 1600 1350 1500 1400
+U 5F0CED9A
+F0 "Filtro Passa-Baixas" 50
+F1 "filtro.sch" 50
+F2 "+VDC" I L 1600 1600 50 
+F3 "-VDC" I L 1600 1750 50 
+F4 "GND" I L 1600 1900 50 
+F5 "+SIG" I L 1600 2050 50 
+F6 "+SIG_F" O R 3100 1600 50 
+$EndSheet
 $EndSCHEMATC
