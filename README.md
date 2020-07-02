@@ -1,15 +1,56 @@
-# audioamp
+# Amplificador de Audio
 
 Essa é uma placa contendo um filtro passa-baixas de terceira ordem de Chebyshev com um amplificador de áudio baseado no TDA2030. No [esquemático](./Esquemático.pdf), as conexões estão descritas e separadas em blocos, que fizeram parte do projeto da [PCB](./PCB.pdf). Para montar o projeto, uma lista de materiais interativa está disponível [aqui](https://cardosorapha.github.io/audioamp/).
 
-## Imagens
-
-Essa é a placa montada, vista de frente:
-
 <img src="/imagens/frente.png" alt="Frente"/>
 
-E vista de trás:
+## Uso
 
-<img src="/imagens/tras.png" alt="Trás"/>
+Esse circuito recebe um sinal como entrada, dá um ganho o filtra com as seguintes especificações
 
-Como pode-se ver na imagem frontal, existe um jumper JP1 aproximadamente no centro da placa. Esse é um jumper que conecta os terras e não é muito longo, então não deve gerar problemas. Os arquivos gerber estão na pasta [gerber](./gerber) e podem ser usados no [Flatcam](http://flatcam.org/) para gerar os arquivos para a fresa CNC.
+* fs1 = 1200Hz
+* fp1 = 4200hz
+* Amin = 40dB
+* Amax = 2dB
+* Gcc = 0.5V/V
+
+O sinal filtrado segue para o amplificador que suporta cargas de até 8R. 
+
+### Alimentação
+
+* +14V indicado por +VDC
+* -14V indicado por -VDC
+* GND
+
+### Entradas
+
+* Sinal a ser filtrado indicado por +SIG
+* GND
+
+### Saídas
+
+* OUT1
+* OUT2
+
+Devem ser conectados ao speaker.
+
+### Fabricação
+
+Os arquivos gerber estão disponíveis na pasta [gerber](./gerber) para fabricação. 
+
+## Customização
+
+Pré-requisitos:
+* [KiCAD](https://kicad-pcb.org/)
+
+O projeto pode ser facilmente clonado com:
+```
+git clone https://github.com/cardosorapha/audioamp.git
+```
+
+
+# Desenvolvido na 
+
+<p align="center">
+  <img src="imagens/ufs_horizontal_positiva.png" width="300" />
+</p>
