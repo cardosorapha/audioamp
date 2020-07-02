@@ -5,6 +5,7 @@ Essa é uma placa contendo um filtro passa-baixas de terceira ordem de Chebyshev
 ##Imagens
 
 Essa é a placa montada, vista de frente:
-![alt text][./imagens/frente.png]
+<img src="/imagens/frente.png" alt="My cool logo"/>
+
 E vista de trás:
 ![alt text][https://github.com/cardosorapha/audioamp/tree/master/imagens/tras.png]
