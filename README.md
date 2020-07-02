@@ -10,4 +10,6 @@ Essa é a placa montada, vista de frente:
 
 E vista de trás:
 
-<img src="/imagens/frente.png" alt="Trás"/>
+<img src="/imagens/tras.png" alt="Trás"/>
+
+Como pode-se ver na imagem frontal, existe um jumper JP1 aproximadamente no centro da placa. Esse é um jumper que conecta os terras e não é muito longo, então não deve gerar problemas. Os arquivos gerber estão na pasta [gerber](./gerber) e podem ser usados no [Flatcam](http://flatcam.org/) para gerar os arquivos para a fresa CNC.
