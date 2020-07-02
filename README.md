@@ -24,7 +24,7 @@ O sinal filtrado segue para o amplificador que suporta cargas de até 8R.
 
 ### Entradas
 
-* Sinal a ser filtrado indicado por +SIG
+* Sinal de áudio indicado por por +SIG
 * GND
 
 ### Saídas
@@ -47,6 +47,14 @@ O projeto pode ser facilmente clonado com:
 ```
 git clone https://github.com/cardosorapha/audioamp.git
 ```
+
+Qualquer filtro passa-baixas de terceira ordem de topologia Sallen-Key pode ser implementado sem nenhuma modificação na placa, apenas nos componentes. Com isso, é possível modificar seus parâmetros facilmente, adaptando-os para a aplicação.
+
+## Contato
+
+Raphael Cardoso - cardosodeoliveir@gmail.com
+
+Link do Projeto: [https://github.com/cardosorapha/audioamp](https://github.com/cardosorapha/audioamp)
 
 
 # Desenvolvido na 
